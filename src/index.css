@@ -1,0 +1,81 @@
+/* .show,
+.hide {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+} */
+/* .show {
+  opacity: 1;
+  transition: all 1.5s ease-in;
+}
+.hide {
+  opacity: 0;
+  transition: all 1.5s ease-in;
+} */
+
+/* ease-in表示从慢到快 */
+/* forwards表示动画结束会停留在最后一帧，而不会跳到第一帧 */
+/* .show {
+  animation: show-key 2s ease-in forwards;
+}
+.hide {
+  animation: hide-key 2s ease-in forwards;
+} */
+/* 
+@keyframes hide-key {
+  0% {
+    opacity: 1;
+    border-radius: 0px;
+  }
+  50% {
+    opacity: 0.5;
+    border-radius: 50px;
+  }
+  100% {
+    opacity: 0;
+    border-radius: 100px;
+  }
+}
+
+@keyframes show-key {
+  0% {
+    opacity: 0;
+    border-radius: 100px;
+  }
+  50% {
+    opacity: 0.5;
+    border-radius: 50px;
+  }
+  100% {
+    opacity: 1;
+    border-radius: 0px;
+  }
+} */
+
+.divBox {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
+
+/* avatar是通过classNames设置的 */
+.avatar-enter {
+  opacity: 0;
+}
+.avatar-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.avatar-enter-done {
+  opacity: 1;
+}
+.avatar-exit {
+  opacity: 1;
+}
+.avatar-exit-active {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
+.avatar-exit-done {
+  opacity: 0;
+}
